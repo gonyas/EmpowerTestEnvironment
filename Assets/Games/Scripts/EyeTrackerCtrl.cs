@@ -50,7 +50,7 @@ public class EyeTrackerCtrl : MonoBehaviour
             }
             else
             {
-                tracker.SetActivity(1,1);//PersistentData.CurrentStudent.studentID, PersistentData.CurrentActivity.activityId);
+                tracker.SetActivity(1,1,1);//PersistentData.CurrentStudent.studentID, PersistentData.CurrentActivity.activityId);
                 //tracker.CreateConnection("127.0.0.1", "empowerdb", 3306, "root", "EMPOWERpwd");
                 tracker.CreateConnection("127.0.0.1", "empower", 3306, "root", "empower1");
             }

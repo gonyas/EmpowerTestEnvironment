@@ -48,7 +48,7 @@ namespace ChimeraSoftwareSolutions
         /// </summary>
         [SerializeField]
         [Tooltip("Calibration points.")]
-        public Vector2[] _points;
+        public Vector2[] _points; 
 
         [SerializeField]
         private Image _calibrationPoint;
@@ -120,7 +120,7 @@ namespace ChimeraSoftwareSolutions
                     yield return new WaitForSeconds(3f);
 
                     // Collect data
-                    NormalizedPoint2D normalizedPoint = new NormalizedPoint2D(point.x, point.y);
+                    NormalizedPoint2D normalizedPoint = new NormalizedPoint2D(point.x, point.y);     
                     status = calibration.CollectData(normalizedPoint);
 
                     if (status != CalibrationStatus.Success)
@@ -134,7 +134,7 @@ namespace ChimeraSoftwareSolutions
 
             foreach (var testPoints in calibrationResult.CalibrationPoints)
             {
-                Vector2 point = new Vector2() { x = (float)Math.Round(testPoints.PositionOnDisplayArea.X * 10) / 10, y = (float)Math.Round(testPoints.PositionOnDisplayArea.Y * 10) / 10 };
+                Vector2 point = new Vector2() { x = (float)Math.Round(testPoints.PositionOnDisplayArea.X*10)/10, y = (float)Math.Round(testPoints.PositionOnDisplayArea.Y*10)/10 };
                 ResultPoints.Add(point, testPoints.CalibrationSamples);
             }
 
@@ -145,7 +145,7 @@ namespace ChimeraSoftwareSolutions
 
             if (resultCallback != null)
                 resultCallback(calibrationResult.Status == CalibrationStatus.Success);
-            else
+            else 
                 resultCallback(calibrationResult.Status == CalibrationStatus.Failure);
 
             yield return calibrationResult;
@@ -173,7 +173,7 @@ namespace ChimeraSoftwareSolutions
             RecalibrateOrApply.CalibrationAccepted = false;
             var calibrationStartResult = Instance.StartCalibration(resultCallback: (calibrationResult) =>
             {
-                UIRender.self.ShowCalibrationPanel(calibrationResult ? "Success" : "Failure", calibrationResult);
+                UIRender.self.ShowCalibrationPanel(calibrationResult ? "Success"  : "Failure", calibrationResult);
                 _calibrationInProgress = false;
             });
         }

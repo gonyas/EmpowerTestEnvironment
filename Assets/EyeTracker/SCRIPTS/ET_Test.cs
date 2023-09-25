@@ -16,7 +16,7 @@ public class ET_Test : MonoBehaviour
         //Create database connection
         tracker.CreateConnection("127.0.0.1","teszt1",3306,"root","root");
 
-        tracker.SetActivity(1,101);
+        tracker.SetActivity(1,101,1011);
     }
     void Update()
     {
@@ -46,7 +46,7 @@ public class ET_Test : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            tracker.SetActivity(1, 255);
+            tracker.SetActivity(1, 255,1011);
         }
         if(Input.GetKeyDown(KeyCode.H))
         {

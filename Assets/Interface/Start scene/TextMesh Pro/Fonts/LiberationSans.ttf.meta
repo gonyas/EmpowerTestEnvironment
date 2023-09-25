@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: ca32a1effe5b52d459f3240eb0a27173
+guid: 5f153177c451c9c489b2b796edb5670e
+timeCreated: 1484171297
+licenseType: Pro
 TrueTypeFontImporter:
-  externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 2
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 0
-  characterPadding: 1
+  characterSpacing: 1
+  characterPadding: 0
   includeFontData: 1
-  fontNames:
-  - Liberation Sans
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: a532c4cdba010b940bc5f92dd00400e9, type: 3}
+  use2xBehaviour: 0
+  fontNames: []
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
-  ascentCalculationMode: 1
-  useLegacyBoundsCalculation: 0
-  shouldRoundAdvanceValue: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

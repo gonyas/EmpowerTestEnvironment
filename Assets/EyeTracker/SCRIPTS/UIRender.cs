@@ -33,7 +33,7 @@ public class UIRender : MonoBehaviour
     }
 
     //Needed for the Unity games
-    public void OnDisable()
+    public void OnDisable()     
     {
         RecalibrateButton.SetActive(false);
         AcceptButton.SetActive(false);
@@ -50,7 +50,7 @@ public class UIRender : MonoBehaviour
         self.gameObject.SetActive(true);
         // ResultText = GameObject.FindGameObjectWithTag("CalibrationResult_Text");
         // AcceptButton = GameObject.FindGameObjectWithTag("Accept_Calibration");
-
+        
         //Needed for the Unity games
         AcceptButton.SetActive(true);
         RecalibrateButton.SetActive(true);
@@ -86,10 +86,10 @@ public class UIRender : MonoBehaviour
             if (!CalibrationRunner.ResultPoints.ContainsKey(point))
                 continue;
 
-            var pointAPosition = new Vector2(screen_width * point.x, screen_height * (1 - point.y));
+            var pointAPosition = new Vector2(screen_width * point.x, screen_height * (1-point.y));
 
-            var pointBLeftPosition = new Vector2(screen_width * CalibrationRunner.ResultPoints[point][0].LeftEye.PositionOnDisplayArea.X, screen_height * (1 - CalibrationRunner.ResultPoints[point][0].LeftEye.PositionOnDisplayArea.Y));
-            var pointBRightPosition = new Vector2(screen_width * CalibrationRunner.ResultPoints[point][0].RightEye.PositionOnDisplayArea.X, screen_height * (1 - CalibrationRunner.ResultPoints[point][0].RightEye.PositionOnDisplayArea.Y));
+            var pointBLeftPosition = new Vector2(screen_width * CalibrationRunner.ResultPoints[point][0].LeftEye.PositionOnDisplayArea.X, screen_height * (1-CalibrationRunner.ResultPoints[point][0].LeftEye.PositionOnDisplayArea.Y));
+            var pointBRightPosition = new Vector2(screen_width * CalibrationRunner.ResultPoints[point][0].RightEye.PositionOnDisplayArea.X, screen_height * (1-CalibrationRunner.ResultPoints[point][0].RightEye.PositionOnDisplayArea.Y));
 
             MakeLine(pointAPosition, pointBLeftPosition, Color.red);
             MakeLine(pointAPosition, pointBRightPosition, Color.green);
@@ -120,8 +120,8 @@ public class UIRender : MonoBehaviour
             {
                 if (child.CompareTag("Circle_LeftUp"))
                 {
-                    child.rectTransform.position = new Vector2(screen_width * point[4].PositionOnDisplayArea.X, screen_height * point[4].PositionOnDisplayArea.Y);
-                    child.color = Color.white;
+                        child.rectTransform.position = new Vector2(screen_width * point[4].PositionOnDisplayArea.X, screen_height * point[4].PositionOnDisplayArea.Y);
+                        child.color = Color.white;
                 }
                 else if (child.CompareTag("Circle_RightUp"))
                 {
@@ -145,7 +145,7 @@ public class UIRender : MonoBehaviour
     void MakeLine(Vector2 pointA, Vector2 pointB, Color col)
     {
         GameObject newObject = new GameObject();
-        Vector2 new_PointB = new Vector2(Mathf.RoundToInt(pointB.x), Mathf.RoundToInt(pointB.y));
+        Vector2 new_PointB = new Vector2(Mathf.RoundToInt(pointB.x),Mathf.RoundToInt(pointB.y));
         pointB = new_PointB;
         newObject.name = "line from " + pointA.ToString() + " to " + pointB.ToString();
 

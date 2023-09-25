@@ -261,7 +261,7 @@ public class HeadPositioner : MonoBehaviour
     }
     public void CloseHeadPosition()
     {
-        Cursor.visible = true;
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         TrackBoxGuideActive = false;
     }
