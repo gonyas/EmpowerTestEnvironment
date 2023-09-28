@@ -53,14 +53,14 @@ public class LevelCtrl : MonoBehaviour
                     indexColour = 2;
                 else if (level == 7)
                     indexColour = 3;
-                PersistentData.CurrentLevelAttention = level;
+                //PersistentData.CurrentLevelAttention = level;
                 ctrl.gameObject.GetComponent<ForestGameCtrlChild>().changeLevel(level);
                 break;
             case ActivityType.WORKMEMORY:
-                PersistentData.CurrentLevelWorkingMemory = level;
+                //PersistentData.CurrentLevelWorkingMemory = level;
                 break;
             case ActivityType.INHIBITION:
-                PersistentData.CurrentLevelInhibition = level;
+                //PersistentData.CurrentLevelInhibition = level;
                 break;
         }
         listLevelImage[indexColour - 1].color = selectedColour;//Color.yellow;

@@ -8779,8 +8779,8 @@ MonoBehaviour:
   - {fileID: 1496657480}
   - {fileID: 1793379155}
   - {fileID: 625480818}
-  selectedColour: {r: 0.9137255, g: 0.7294118, b: 0.17254902, a: 0}
-  ctrl: {fileID: 0}
+  selectedColour: {r: 0.9137255, g: 0.7294118, b: 0.17254902, a: 1}
+  ctrl: {fileID: 646556206}
 --- !u!1 &1069613537
 GameObject:
   m_ObjectHideFlags: 0
