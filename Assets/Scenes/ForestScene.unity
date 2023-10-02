@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calibration: {fileID: 683565250}
-  calibrationResult: {fileID: 393035906}
+  calibrationResult: {fileID: 1818691755}
   gazeTrail: {fileID: 25108928}
   headPosition: {fileID: 1819513150}
   usingCalibration: 1
@@ -16963,6 +16963,11 @@ PrefabInstance:
 --- !u!224 &1818691754 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3615114149400492594, guid: 91c932c8dae18f2468b34c6f9edefe5b, type: 3}
+  m_PrefabInstance: {fileID: 1818691753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1818691755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3615114149400492558, guid: 91c932c8dae18f2468b34c6f9edefe5b, type: 3}
   m_PrefabInstance: {fileID: 1818691753}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1819513150 stripped
