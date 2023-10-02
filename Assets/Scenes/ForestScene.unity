@@ -915,7 +915,7 @@ MonoBehaviour:
   calibration: {fileID: 683565250}
   calibrationResult: {fileID: 393035906}
   gazeTrail: {fileID: 25108928}
-  headPosition: {fileID: 1139711231}
+  headPosition: {fileID: 1819513150}
   usingCalibration: 1
   endCalibration: 0
   skipCalibration: 0
@@ -7724,7 +7724,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55c19955896aefc4086c5e184ef2f9b8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c0953f677bd0fd84d850ebb5bb841b69, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
@@ -9149,11 +9149,6 @@ PrefabInstance:
 --- !u!224 &1139711230 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 94735366305032105, guid: 93b91ae558bea384882de3aaaab2d002, type: 3}
-  m_PrefabInstance: {fileID: 1139711229}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1139711231 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 94735366305032106, guid: 93b91ae558bea384882de3aaaab2d002, type: 3}
   m_PrefabInstance: {fileID: 1139711229}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1140238764
@@ -13925,7 +13920,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7146ca5dd6fdf6c4c910236bff7b4c3e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 60edfaae3439ff94a8af8be4e1127beb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.4
   m_Pitch: 1
@@ -16969,6 +16964,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3615114149400492594, guid: 91c932c8dae18f2468b34c6f9edefe5b, type: 3}
   m_PrefabInstance: {fileID: 1818691753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1819513150 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 94735366305032106, guid: 93b91ae558bea384882de3aaaab2d002, type: 3}
+  m_PrefabInstance: {fileID: 1272353068}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1827878457
 GameObject:
